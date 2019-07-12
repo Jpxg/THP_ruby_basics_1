@@ -23,9 +23,23 @@ def wtf_pyramid
     print ' ' * (height_middle - (n - 1))
         puts '#' * ((2 * (n - 1)) + 1)
     }
+  end
+
+    def play    
+      puts "What pyramid you want to do ?"
+      print "select 1 for ramses or 2 for wtf : "
+      choice = gets.chomp.to_i
+          while choice != 1 && choice != 2
+              print "select 1 for ramses or 2 for wtf : "
+              choice = gets.chomp.to_i
+          end
+      if choice == 1
+          full_pyramid
+      else  
+          wtf_pyramid
+      end
+  end
 
 
-end
-
-wtf_pyramid
+play
 

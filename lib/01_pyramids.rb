@@ -14,14 +14,15 @@ def wtf_pyramid
     print "> "
     height = gets.chomp.to_i
     height_middle = height/2 + height%2
+    height_middle2 = height/2
     puts "Voici la pyramide:"
     height_middle.times {|n|
         print ' ' * (height_middle - n)
         puts '#' * (2 * n + 1)
     }
-    height_middle.times.reverse_each { |n|
-    print ' ' * (height_middle - (n - 1))
-        puts '#' * ((2 * (n - 1)) + 1)
+    height_middle2.times.reverse_each { |n|
+        print ' ' * (height_middle - n)
+        puts '#' * (2 * n + 1)
     }
   end
 

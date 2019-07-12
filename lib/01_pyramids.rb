@@ -21,7 +21,7 @@ def wtf_pyramid
     }
     height_middle.times.reverse_each { |n|
     print ' ' * (height_middle - (n - 1))
-        puts '#' * ((2*n-2) + 1)
+        puts '#' * ((2 * (n - 1)) + 1)
     }
 
 
